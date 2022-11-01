@@ -34,7 +34,6 @@ if [ -z "${SGID}" ]; then
   exit 1
 fi
 
-
 for component in catalogue cart user shipping payment frontend mongodb mysql rabbitmq redis dispatch; do
   COMPONENT="${component}"
   create_ec2
